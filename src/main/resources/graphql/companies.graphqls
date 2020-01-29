@@ -1,0 +1,11 @@
+type Address {
+    street: String!,
+    zipCode: String!,
+    town: String!,
+    country: String!
+}
+
+type Company {
+    name: String!,
+    address: Address!
+}
