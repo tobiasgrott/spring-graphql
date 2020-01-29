@@ -13,3 +13,19 @@ type Company {
 type Query {
     company(name:String) : Company;
 }
+
+type CompanyInput {
+    name: String!,
+    address: AddressInput!
+}
+
+type AddressInput {
+    street: String!,
+    zipCode: String!,
+    town: String!,
+    country: String!
+}
+
+type Mutation {
+    createCompany(input: CompanyInput) : Company;
+}
