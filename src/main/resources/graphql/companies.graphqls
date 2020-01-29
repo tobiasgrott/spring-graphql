@@ -9,3 +9,7 @@ type Company {
     name: String!,
     address: Address!
 }
+
+type Query {
+    company(name:String) : Company;
+}
