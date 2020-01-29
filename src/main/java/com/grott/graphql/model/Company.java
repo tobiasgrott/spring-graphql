@@ -2,18 +2,18 @@ package com.grott.graphql.model;
 
 public class Company {
     private String name;
-    private Address location;
+    private Address address;
 
     public String getName() {
         return name;
     }
 
-    public Address getLocation() {
-        return location;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setLocation(Address location) {
-        this.location = location;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public void setName(String name) {

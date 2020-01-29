@@ -7,19 +7,19 @@ type Address {
 
 type Company {
     name: String!,
-    location: Address!
+    address: Address!
 }
 
 type Query {
     company(name:String) : Company;
 }
 
-type CompanyInput {
+input CompanyInput {
     name: String!,
-    location: AddressInput!
+    address: AddressInput!
 }
 
-type AddressInput {
+input AddressInput {
     street: String!,
     zipCode: String!,
     town: String!,
