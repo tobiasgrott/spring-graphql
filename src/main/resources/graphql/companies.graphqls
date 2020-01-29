@@ -7,7 +7,7 @@ type Address {
 
 type Company {
     name: String!,
-    address: Address!
+    location: Address!
 }
 
 type Query {
@@ -16,7 +16,7 @@ type Query {
 
 type CompanyInput {
     name: String!,
-    address: AddressInput!
+    location: AddressInput!
 }
 
 type AddressInput {
